@@ -1,5 +1,6 @@
-import day_one
+
+import day_two
 
 if __name__ == '__main__':
-    day_one.solve_part_one()
-    day_one.solve_part_two()
+    day_two.solve_part_one()
+    day_two.solve_part_two()
