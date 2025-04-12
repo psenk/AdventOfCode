@@ -75,15 +75,19 @@ def get_antinodes_two(graph, nodes):
                 offset_2 = (point_2[0] - point_1[0], point_2[1] - point_1[1])
                 # print(f'offset_1: {offset_1}, offset_1: {offset_2}')
 
-                antinode_1 = (point_1[0] + offset_1[0], point_1[1] + offset_1[1])
+                antinode_1 = (point_1[0] + offset_1[0],
+                              point_1[1] + offset_1[1])
                 while 0 <= antinode_1[0] < len(graph[0]) and 0 <= antinode_1[1] < len(graph):
                     antinodes.add(antinode_1)
-                    antinode_1 = (antinode_1[0] + offset_1[0], antinode_1[1] + offset_1[1])
-                    
-                antinode_2 = (point_2[0] + offset_2[0], point_2[1] + offset_2[1])
+                    antinode_1 = (
+                        antinode_1[0] + offset_1[0], antinode_1[1] + offset_1[1])
+
+                antinode_2 = (point_2[0] + offset_2[0],
+                              point_2[1] + offset_2[1])
                 while 0 <= antinode_2[0] < len(graph[0]) and 0 <= antinode_2[1] < len(graph):
                     antinodes.add(antinode_2)
-                    antinode_2 = (antinode_2[0] + offset_2[0], antinode_2[1] + offset_2[1])
+                    antinode_2 = (
+                        antinode_2[0] + offset_2[0], antinode_2[1] + offset_2[1])
 
                 # print(f'antinode_1: {antinode_1}, antinode_2: {antinode_2}')
 
