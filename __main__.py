@@ -1,6 +1,6 @@
 
-import src.day_nine as day_nine
+import src.day_ten as day_ten
 
 if __name__ == '__main__':
-    day_nine.solve_part_one()
-    day_nine.solve_part_two()
+    day_ten.solve_part_one()
+    day_ten.solve_part_two()
